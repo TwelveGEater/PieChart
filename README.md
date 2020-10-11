@@ -7,19 +7,13 @@ GitHub pages: https://github.com/TwelveGEater
 ### How to use
 
 Just click on field for enter value, then use left navigation to change page:
-**NOTE**: data are live update, so when you finish enter data, just go to chart 
 
-```
+**NOTE**: data are live update, so when you finish enter data, just go to chart 
 
 :page_facing_up: => open page with data from pie chart
 
-```
-
-```
-
 :pie: :chart_with_upwards_trend: => open page with pie chart
 
-```
 If you wanna add more field click on :heavy_plus_sign: button and enter name and value of new field, when you finish tap :heavy_check_mark: button.
 
 Good luck and have fun!

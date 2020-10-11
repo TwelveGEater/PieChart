@@ -5,7 +5,7 @@ function getRandomColor() {
 	let letters = '0123456789ABCDEF';
 	let color = '#';
 	for (let i = 0; i < 6; i++) {
-		color += letters[Math.ceil(Math.random() * 16)];
+		color += letters[Math.ceil(Math.random() * 15)];
 	}
 	return color;
 }
@@ -25,7 +25,6 @@ export const dataReducer = (state, action) => {
 				fieldData: {
 					...state.fieldData,
 					[action.name]: {
-						name: 'Value 1',
 						color: getRandomColor(),
 						value: +action.value
 					}

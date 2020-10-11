@@ -1,14 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Data from './Data';
-import PieChartGraph from './PieChart';
+import Data from './Data/Data';
+import PieChartGraph from './PieChart/PieChart';
 import * as serviceWorker from './serviceWorker';
-import store from './store';
+import store from './BLL/store';
+import logo from './assets/images/logo-retina.png';
+import NavItem from './NavItem/NavItem';
 
 class App extends React.Component {
 	constructor() {
 		super(...arguments);
+
 		this.state = {
 			route: window.location.hash.substr(1)
 		};
@@ -21,7 +24,6 @@ class App extends React.Component {
 			});
 		});
 	}
-
 	render() {
 		let Child;
 		switch (this.state.route) {
@@ -36,12 +38,21 @@ class App extends React.Component {
 		}
 		return (
 			<div className="App">
-				<menu className="nav">
-					<header>App</header>
-					<a href="#/data">Data Page</a> <br />
-					<a href="#/graphic">PieChart Page</a>
-					<br />
-				</menu>
+				<header className="header">
+					<nav className="nav">
+						<div className="nav-wrapper">
+							<img src={logo} alt="logo" className="nav-logo" />
+							<ul id="menu-main-nav" className="nav-menu">
+								<NavItem path="#/data" url={this.state.route} icon={<i className="far fa-file" />} />
+								<NavItem
+									path="#/graphic"
+									url={this.state.route}
+									icon={<i className="fas fa-chart-pie" />}
+								/>
+							</ul>
+						</div>
+					</nav>
+				</header>
 				<Child data={store.getState().dataPage.fieldData} />
 			</div>
 		);

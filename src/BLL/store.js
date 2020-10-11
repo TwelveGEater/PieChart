@@ -5,9 +5,12 @@ const store = {
 		dataPage: {
 			fieldData: {
 				Apples: {
-					name: 'Value 1',
 					color: 'Green',
-					value: 45
+					value: 42
+				},
+				Banana: {
+					color: 'pink',
+					value: 10
 				}
 			}
 		}

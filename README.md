@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-GitHub pages: https://github.com/TwelveGEater
+GitHub pages: https://twelvegeater.github.io/PieChart/
 
 ### How to use
 
